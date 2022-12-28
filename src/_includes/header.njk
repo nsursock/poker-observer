@@ -22,7 +22,7 @@
             <a
               href="{{ item.route }}"
               class="{{
-                page.url == item.route ? 'font-black' : 'font-medium'
+                'font-black' if page.url == item.route else 'font-medium'
               }} text-base text-white hover:text-indigo-50"
             >
               {{ item.name }}
@@ -44,7 +44,7 @@
         <a
           href="{{ item.route }}"
           class="{{
-            page.url == item.route ? 'font-black' : 'font-medium'
+            'font-black' if page.url == item.route else 'font-medium'
           }} text-base text-white hover:text-indigo-50"
         >
           {{ item.name }}

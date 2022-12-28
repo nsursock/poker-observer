@@ -1,9 +1,9 @@
-{% extends 'layout.twig' %}
+{% extends 'layout.njk' %}
 
 {% block body %}
   <div class="container py-16">
     <div class="prose max-w-none">
-      {{ content|raw }}
+      {{ content | safe }}
     </div>
   </div>
 {% endblock %}
